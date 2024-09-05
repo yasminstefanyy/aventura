@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <title>Em busca da Torre da princesa</title>
+</head>
+<body>
+    <main>
+        <div class="passo passo-ativo" id="passo-0">
+            <img src="img/livros.jpeg" alt="imagem encontrando o livro">
+            <p>Um dia desses fui até a biblioteca da minha cidade, e um livro rosa bem grande me chamou atenção, ele se tratava de uma princesa que vivia trancada em uma torre. Achei bem interessante e o levei para casa, quando fui ler caiu um mapa que tinha localizações e pistas que possivelmente, me levaria até a torre, e eu decidi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Parque da cidade</button>
+            <button class="btn-proximo" data-proximo="2">Floresta</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa indo ao Parque da cidade, as pistas do mapa falam para você se dirigir até a fonte para encontrar a primeira pista</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no fundo da fonte</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e ir embora</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Chegando na floresta, você vê que o mapa indica que para encontrar a próxima pista você terá que procurar nos pontos abandonados da floresta. Por qual você começa?</p>
+            <button class="btn-proximo" data-proximo="5">Ir até a vila abandonada</button>
+            <button class="btn-proximo" data-proximo="6">Ir até o hospital abandonado</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No fundo da fonte você encontra uma inscrição antiga apontando que a próxima pista estaria nas ruínas da antiga ponte</p>
+            <button class="btn-proximo" data-proximo="7">Ir para as ruínas da antiga ponte</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/caminho.de.casa.webp" alt="imagem voltando pra casa e desistindo da aventura">
+            <p>Você desiste dessa aventura e fica para sempre se perguntando o que poderia ter encontrado</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Na vila abandonada você entra em uma casa e acha um baú empoeirado, nele você encontra uma carta que dizia que a próxima pista estaria nas ruínas da antiga ponte</p>
+            <button class="btn-proximo" data-proximo="7">Ir até as ruínas da antiga ponte</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>No hospital você não encontra nada.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e ir para a vila abandonada</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Na vila você encontra uma carta antiga. Agora vá para as ruínas da antiga ponte!</p>
+            <button class="btn-proximo" data-proximo="8">Ir até as ruínas da antiga ponte</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Chegando na ponte você vê dois caminhos, qual você segue?</p>
+            <button class="btn-proximo" data-proximo="9">Seguir o caminho da esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir o caminho da direita</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Seguindo o caminho da esquerda você chega a uma área pantanosa que, apesar de ter uma bela vista, não há sinais da torre</p>
+            <button class="btn-proximo" data-proximo="8">Retornar e tentar o outro caminho</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Retornando, você segue o caminho da direita e finalmente chega até uma linda cachoeira com uma inscrição antiga que o leva até a torre</p>
+            <button class="btn-proximo" data-proximo="12">Ir até a torre para explorar</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>O caminho da direita leva você a um jardim enorme com uma linda cachoeira, que revela a entrada da torre</p>
+            <button class="btn-proximo" data-proximo="12">Ir explorar a torre</button>
+        </div>
+        <div class="passo" id="passo-12">
+            <img src="img/torre.webp" alt="Você encontra a torre">
+            <p>Chegando na torre, você descobre que a princesa já foi salva, mas largou para trás todas as suas riquezas. Você acha o lugar muito bonito e decide preservá-lo!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
